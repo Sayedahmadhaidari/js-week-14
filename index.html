@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Task List</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Task List</h1>
+      <p class="subtitle">Manage your daily tasks</p>
+
+      <!-- Add Task Form -->
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task..."
+          required
+        />
+
+        <button type="submit" class="add-btn">Add Task</button>
+      </form>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="All">
+          All
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="Active">
+          Active
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="Completed">
+          Completed
+        </button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+
+      <p id="taskCount">0 tasks</p>
+    </div>
+  </body>
+</html>
